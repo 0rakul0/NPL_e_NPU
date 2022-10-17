@@ -23,12 +23,20 @@ class bate_lista_cdb_outros():
         url = f"https://yubb.com.br/investimentos/renda-fixa?collection_page={page}&investment_type=renda-fixa&months={months}&principal=5000.0&sort_by=net_return"
         driver.get(url)
         soup = bs(driver.page_source, "html.parser")
-        list_resultado_retorno, list_resultado_rentabilidade, list_resultado_empresa, list_resultado_tag, \
-        list_resultado_tipo, list_resultado_rentabilidade_ano, list_resultado_prazo, list_resultado_distribuidor, \
-        list_resultado_emissor = self.extrator(soup)
-
+        #captura_dados
+        dict_dados = self.extrator(soup)
+        #salva_dados
+        self.salva_dados(dict_dados, page)
         driver.quit()
 
+    #salva os dados
+    def salva_dados(self, dict_dados, pagina):
+        print(pagina)
+        df = pd.DataFrame(dict_dados)
+        df.to_csv(f"./dados/5 anos/{pagina}__todos_60.csv", encoding='utf-8')
+
+
+    #extrai dados
     def extrator(self, soup):
         bloco_informacoes = soup.find('div', {'class':'investmentCardContainer__body'})
         cards = bloco_informacoes.find_all('article', {'data-spec':'investments/card'})
@@ -42,24 +50,37 @@ class bate_lista_cdb_outros():
         list_resultado_distribuidor = []
         list_resultado_emissor = []
 
-        for card in cards:
+        for  card in cards:
             info_head = card.find('header',{'class':'stack'})
             #retorno
-            resultado_retorno = info_head.find('div', {'class':'results__netReturn'})
-            resultado_retorno = resultado_retorno.find('span', {'class':'sugarish__whole'}).text
-            resultado_retorno = resultado_retorno.replace(',', '.')
+            try:
+                resultado_retorno = info_head.find('div', {'class':'results__netReturn'})
+                resultado_retorno = resultado_retorno.find('span', {'class':'sugarish__whole'}).text
+                resultado_retorno = resultado_retorno.replace(',', '.')
+            except:
+                resultado_retorno = None
             list_resultado_retorno.append(resultado_retorno)
             #rentabilidade
-            resultado_rentabilidade = info_head.find('div', {'class':'results__grossYield'})
-            resultado_rentabilidade = resultado_rentabilidade.find('span',{'class':'sugarish__number'}).text
-            resultado_rentabilidade = resultado_rentabilidade.replace(',', '.')
+            try:
+                resultado_rentabilidade = info_head.find('div', {'class':'results__grossYield'})
+                resultado_rentabilidade = resultado_rentabilidade.find('span',{'class':'sugarish__number'}).text
+                resultado_rentabilidade = resultado_rentabilidade.replace(',', '.')
+            except:
+                resultado_rentabilidade = None
             list_resultado_rentabilidade.append(resultado_rentabilidade)
             #empresa
-            empresa = info_head.find('h3', {'class':'flex-stack font-size--s0'})
-            empresa = empresa.text
+            try:
+                empresa = info_head.find('h3', {'class':'flex-stack font-size--s0'})
+                empresa = empresa.text
+                empresa = empresa.replace(',','.')
+            except:
+                empresa = None
             list_resultado_empresa.append(empresa)
             #tipo
-            tipo = info_head.find('h4', {'class':'badge'}).text
+            try:
+                tipo = info_head.find('h4', {'class':'badge'}).text
+            except:
+                tipo = None
             list_resultado_tipo.append(tipo)
             #tag
             try:
@@ -72,28 +93,44 @@ class bate_lista_cdb_outros():
             table = info_section.find('table')
             tbody = table.find('tbody')
             #rentabilidade_ano
-            rentabilidade_ano = tbody.find('th', text=re.compile('Rentabilidade líquida ao ano'))
-            rentabilidade_ano = rentabilidade_ano.find_next('td').text
+            try:
+                rentabilidade_ano = tbody.find('th', text=re.compile('Rentabilidade líquida ao ano'))
+                rentabilidade_ano = rentabilidade_ano.find_next('td').text
+                rentabilidade_ano = rentabilidade_ano.replace(',', '.')
+            except:
+                rentabilidade_ano = None
             list_resultado_rentabilidade_ano.append(rentabilidade_ano)
             #prazo_resgate
-            prazo_resgate = tbody.find('th', text=re.compile('Prazo de resgate'))
-            prazo_resgate = prazo_resgate.find_next('td').text
+            try:
+                prazo_resgate = tbody.find('th', text=re.compile('Prazo de resgate'))
+                prazo_resgate = prazo_resgate.find_next('td').text
+            except:
+                prazo_resgate = None
             list_resultado_prazo.append(prazo_resgate)
             #distribuidor
-            distribuidor = tbody.find('th', text=re.compile('Distribuidor'))
-            distribuidor = distribuidor.find_next('td').text
+            try:
+                distribuidor = tbody.find('th', text=re.compile('Distribuidor'))
+                distribuidor = distribuidor.find_next('td').text
+            except:
+                distribuidor = None
             list_resultado_distribuidor.append(distribuidor)
             #emissor
-            emissor = tbody.find('th', text=re.compile('Emissor'))
-            emissor = emissor.find_next('td').text
+            try:
+                emissor = tbody.find('th', text=re.compile('Emissor'))
+                emissor = emissor.find_next('td').text
+            except:
+                emissor = None
             list_resultado_emissor.append(emissor)
 
-        return list_resultado_retorno, list_resultado_rentabilidade, list_resultado_empresa, list_resultado_tag,\
-               list_resultado_tipo, list_resultado_rentabilidade_ano, list_resultado_prazo, list_resultado_distribuidor,\
-               list_resultado_emissor
+        dict_dados = {'retorno':list_resultado_retorno,'rentabilidade':list_resultado_rentabilidade,
+                      'empresa': list_resultado_empresa, 'tag': list_resultado_tag,'tipo':list_resultado_tipo,
+                      'retabilidade_ano': list_resultado_rentabilidade_ano,'prazo': list_resultado_prazo,
+                      'distribuidor':list_resultado_distribuidor,'emissor':list_resultado_emissor}
+
+        return dict_dados
 
 if __name__ == "__main__":
     start = bate_lista_cdb_outros()
 
-    for page in range(1, 12):
-        start.inicio(page,12)
+    for page in range(1, 6):
+        start.inicio(page,60)

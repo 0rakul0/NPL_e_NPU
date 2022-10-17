@@ -18,14 +18,19 @@ class bate_lista_nomes():
     def inicia(self):
         planilha = pd.read_excel('./dados/Primeiro_Nome.xlsx')
         for id, x in planilha.iterrows():
-            nome_pesquisa = x['Nome pessoa fisica']
-            self.nome = nome_pesquisa
-            self.bate_nome(nome=nome_pesquisa)
+            try:
+                nome_pesquisa = x['Nome pessoa fisica']
+                self.nome = nome_pesquisa
+                self.bate_nome(nome=nome_pesquisa)
+                print(f"##############{id}###############")
+            except:
+                print(x['Nome pessoa fisica'])
         self.imprimir()
 
     def bate_nome(self, nome):
         op = Options()
         # op.add_argument('--headless')
+        op.add_argument('--window-size=640,480')
         driver = webdriver.Chrome(executable_path='./chrome/chromedriver.exe', options=op)
         url = f"https://www.jusbrasil.com.br/busca?q={nome}"
         driver.get(url)
@@ -38,7 +43,7 @@ class bate_lista_nomes():
         passe = soup.find('div', {'class':'SnippetSlider-block scrollbar--hidden'})
 
         empresa_juridica = re.compile(
-            'S\.A|viacao|Construtora|Incorporadora|Manutencao|Industriais|Ltda|Admin|Administradora|Servicos|Promotoria|Delegacia',
+            'S\.A|S\/A|viacao|Construtora|Auto|Pecas|Peças|Estojos|Embalagens|Comercio|comércio|Laboratório|Imoveis|Sociedade|Incorporadora|Ltda\s?-\s?Me|Epp|Manutenc.o|Manutenç.o|CIA|Turismo|Industriais|Ltda|Admin|Adm|Administradora|Servicos|Serviços|Promotoria|Delegacia|Imobili.ria|Televis.o|Esporte',
             re.IGNORECASE)
         locais = re.compile('Município|Municipio|Promotoria|Delegacia')
         pessoa_fisica = re.compile(self.nome, re.IGNORECASE)
@@ -57,7 +62,7 @@ class bate_lista_nomes():
                 pessoa = pessoa_fisica.search(x)
                 if pessoa != None:
                     self.lista_nomes.append(x)
-                    print('é uma pessoa:>>',x)
+                    # print('é uma pessoa:>>',x)
 
     def imprimir(self):
         for nome in self.lista_nomes:
