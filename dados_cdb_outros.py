@@ -33,7 +33,7 @@ class bate_lista_cdb_outros():
     def salva_dados(self, dict_dados, pagina):
         print(pagina)
         df = pd.DataFrame(dict_dados)
-        df.to_csv(f"./dados/5 anos/{pagina}__todos_60.csv", encoding='utf-8')
+        df.to_csv(f"./dados/6 meses/{pagina}__todos_6.csv", encoding='utf-8')
 
 
     #extrai dados
@@ -132,5 +132,5 @@ class bate_lista_cdb_outros():
 if __name__ == "__main__":
     start = bate_lista_cdb_outros()
 
-    for page in range(1, 6):
-        start.inicio(page,60)
+    for page in range(1, 21):
+        start.inicio(page,6)

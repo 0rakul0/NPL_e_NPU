@@ -30,7 +30,7 @@ class bate_lista_nomes():
     def bate_nome(self, nome):
         op = Options()
         # op.add_argument('--headless')
-        op.add_argument('--window-size=640,480')
+        op.add_argument('--window-size=40,80')
         driver = webdriver.Chrome(executable_path='./chrome/chromedriver.exe', options=op)
         url = f"https://www.jusbrasil.com.br/busca?q={nome}"
         driver.get(url)
