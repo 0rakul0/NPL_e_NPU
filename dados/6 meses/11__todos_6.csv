@@ -11,3 +11,7 @@
 9,5.242,103.50,BTG Pactual 103.5% CDI por BTG Pactual,FGC,CDB,10.03% a.a.,17/04/2023,BTG Pactual,BTG Pactual
 10,5.242,103.50,Mercado Livre 103.5% CDI por BTG Pactual,FGC,CDB,10.03% a.a.,17/04/2023,BTG Pactual,Mercado Livre
 11,5.242,103.25,BTG Pactual 103.25% CDI por BTG Pactual,FGC,CDB,10.01% a.a.,17/04/2023,BTG Pactual,BTG Pactual
+,retorno,rentabilidade,empresa,tag,tipo,retabilidade_ano,prazo,distribuidor,emissor
+0,5.199,10.50,Fator Prefixado 10.5% por Nova Futura Investimentos,FGC,CDB,8.35% a.a.,24/04/2023,Nova Futura Investimentos,Fator
+1,5.196,10.30,Caruana Financeira Prefixado 10.3% por modalmais,FGC,CDB,8.19% a.a.,24/04/2023,modalmais,Caruana Financeira
+2,5.184,9.70,Santana Financeira Prefixado 9.7% por Daycoval,FGC,LC,7.72% a.a.,24/04/2023,Daycoval,Santana Financeira

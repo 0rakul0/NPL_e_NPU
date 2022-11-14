@@ -11,3 +11,16 @@
 9,5.246,105.00,Paraná Banco 105% CDI por Paraná Banco,FGC,CDB,10.18% a.a.,17/04/2023,Paraná Banco,Paraná Banco
 10,5.246,105.00,PagBank 105% CDI por Nu invest,FGC,CDB,10.18% a.a.,17/04/2023,Nu invest,PagBank
 11,5.246,105.00,PagBank 105% CDI por Ágora Investimentos,FGC,CDB,10.18% a.a.,17/04/2023,Ágora Investimentos,PagBank
+,retorno,rentabilidade,empresa,tag,tipo,retabilidade_ano,prazo,distribuidor,emissor
+0,5.231,100.00,Banco Industrial do Brasil 100% CDI por modalmais,FGC,CDB,9.69% a.a.,24/04/2023,modalmais,Banco Industrial do Brasil
+1,5.231,100.00,Pine 100% CDI por modalmais,FGC,CDB,9.69% a.a.,24/04/2023,modalmais,Pine
+2,5.229,12.10,Pine Prefixado 12.1% por Daycoval,FGC,CDB,9.62% a.a.,24/04/2023,Daycoval,Pine
+3,5.228,98.00,Voiter 98% CDI por Órama,FGC,CDB,9.50% a.a.,25/04/2023,Órama,Voiter
+4,5.228,103.00,Fator 103% CDI por Nova Futura Investimentos,FGC,CDB,9.66% a.a.,23/04/2023,Nova Futura Investimentos,Fator
+5,5.228,12.05,Daycoval Prefixado 12.05% por Daycoval,FGC,CDB,9.58% a.a.,24/04/2023,Daycoval,Daycoval
+6,5.228,12.05,C6 Bank Prefixado 12.05% por Daycoval,FGC,CDB,9.58% a.a.,24/04/2023,Daycoval,C6 Bank
+7,5.227,97.50,Bradesco 97.5% CDI por Ágora Investimentos,FGC,CDB,9.45% a.a.,25/04/2023,Ágora Investimentos,Bradesco
+8,5.226,11.97,BS2 Prefixado 11.97% por Daycoval,FGC,CDB,9.52% a.a.,24/04/2023,Daycoval,BS2
+9,5.226,102.00,Paraná Banco 102% CDI por Nova Futura Investimentos,FGC,CDB,9.57% a.a.,23/04/2023,Nova Futura Investimentos,Paraná Banco
+10,5.225,101.50,BTG Pactual 101.5% CDI por Nova Futura Investimentos,FGC,CDB,9.52% a.a.,23/04/2023,Nova Futura Investimentos,BTG Pactual
+11,5.223,96.00,Daycoval 96% CDI por Guide Investimentos,FGC,CDB,9.31% a.a.,25/04/2023,Guide Investimentos,Daycoval

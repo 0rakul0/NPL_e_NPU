@@ -11,3 +11,16 @@
 9,5.264,13.90,RNX Prefixado 13.9% por modalmais,FGC,CDB,11.04% a.a.,16/04/2023,modalmais,RNX
 10,5.263,13.73,Modal Prefixado 13.73% por BTG Pactual,FGC,CDB,10.91% a.a.,17/04/2023,BTG Pactual,Modal
 11,5.263,88.00,BTG Pactual 88% CDI por Nova Futura Investimentos,FGC,LCA,10.73% a.a.,19/04/2023,Nova Futura Investimentos,BTG Pactual
+,retorno,rentabilidade,empresa,tag,tipo,retabilidade_ano,prazo,distribuidor,emissor
+0,5.239,103.00,Mercado Livre 103% CDI por Ágora Investimentos,FGC,CDB,9.98% a.a.,25/04/2023,Ágora Investimentos,Mercado Livre
+1,5.239,102.00,Luso Brasileiro 102% CDI por Guide Investimentos,FGC,CDB,9.89% a.a.,26/04/2023,Guide Investimentos,Luso Brasileiro
+2,5.238,102.50,BTG Pactual 102.5% CDI por BTG Pactual,FGC,CDB,9.93% a.a.,25/04/2023,BTG Pactual,BTG Pactual
+3,5.238,101.50,Alfa 101.5% CDI por Guide Investimentos,FGC,CDB,9.84% a.a.,26/04/2023,Guide Investimentos,Alfa
+4,5.237,103.00,Caruana Financeira 103% CDI por Daycoval,FGC,CDB,9.98% a.a.,24/04/2023,Daycoval,Caruana Financeira
+5,5.237,103.00,Luso Brasileiro 103% CDI por Nova Futura Investimentos,FGC,CDB,9.98% a.a.,24/04/2023,Nova Futura Investimentos,Luso Brasileiro
+6,5.237,103.00,BS2 103% CDI por Daycoval,FGC,CDB,9.98% a.a.,24/04/2023,Daycoval,BS2
+7,5.237,102.00,Daycoval 102% CDI por Daycoval,FGC,CDB,9.89% a.a.,25/04/2023,Daycoval,Daycoval
+8,5.237,101.00,C6 Bank 101% CDI por Guide Investimentos,FGC,CDB,9.79% a.a.,26/04/2023,Guide Investimentos,C6 Bank
+9,5.237,101.00,Paraná Banco 101% CDI por Guide Investimentos,FGC,CDB,9.79% a.a.,26/04/2023,Guide Investimentos,Paraná Banco
+10,5.237,101.00,ABC 101% CDI por Guide Investimentos,FGC,CDB,9.79% a.a.,26/04/2023,Guide Investimentos,ABC
+11,5.237,101.00,BMG 101% CDI por Guide Investimentos,FGC,CDB,9.79% a.a.,26/04/2023,Guide Investimentos,BMG

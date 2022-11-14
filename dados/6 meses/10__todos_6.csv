@@ -11,3 +11,16 @@
 9,5.244,105.00,Paraná Banco 105% CDI por Paraná Banco,FGC,CDB,10.18% a.a.,16/04/2023,Paraná Banco,Paraná Banco
 10,5.244,105.00,PagBank 105% CDI por XP Investimentos,FGC,CDB,10.18% a.a.,16/04/2023,XP Investimentos,PagBank
 11,5.244,105.00,Daycoval 105% CDI por Daycoval,FGC,CDB,10.18% a.a.,16/04/2023,Daycoval,Daycoval
+,retorno,rentabilidade,empresa,tag,tipo,retabilidade_ano,prazo,distribuidor,emissor
+0,5.223,96.00,Banco Master 96% CDI por Guide Investimentos,FGC,CDB,9.31% a.a.,25/04/2023,Guide Investimentos,Banco Master
+1,5.223,96.00,Caixa Geral 96% CDI por Órama,FGC,CDB,9.31% a.a.,25/04/2023,Órama,Caixa Geral
+2,5.220,11.60,Maxinvest Prefixado 11.6% por Daycoval,FGC,CDB,9.22% a.a.,24/04/2023,Daycoval,Maxinvest
+3,5.219,94.00,Digimais 94% CDI por Guide Investimentos,FGC,CDB,9.11% a.a.,25/04/2023,Guide Investimentos,Digimais
+4,5.219,94.00,Digimais 94% CDI por Guide Investimentos,FGC,CDB,9.11% a.a.,25/04/2023,Guide Investimentos,Digimais
+5,5.219,94.00,Agibank 94% CDI por Nova Futura Investimentos,FGC,CDB,9.11% a.a.,25/04/2023,Nova Futura Investimentos,Agibank
+6,5.219,94.00,BS2 94% CDI por Órama,FGC,CDB,9.11% a.a.,25/04/2023,Órama,BS2
+7,5.217,93.00,Agibank 93% CDI por Guide Investimentos,FGC,CDB,9.02% a.a.,25/04/2023,Guide Investimentos,Agibank
+8,5.214,92.00,BS2 92% CDI por Nova Futura Investimentos,FGC,CDB,8.92% a.a.,25/04/2023,Nova Futura Investimentos,BS2
+9,5.212,91.00,BS2 91% CDI por Guide Investimentos,FGC,CDB,8.83% a.a.,25/04/2023,Guide Investimentos,BS2
+10,5.199,10.50,Caruana Financeira Prefixado 10.5% por Nova Futura Investimentos,FGC,CDB,8.35% a.a.,24/04/2023,Nova Futura Investimentos,Caruana Financeira
+11,5.199,10.50,Caruana Financeira Prefixado 10.5% por Daycoval,FGC,CDB,8.35% a.a.,24/04/2023,Daycoval,Caruana Financeira

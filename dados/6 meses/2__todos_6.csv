@@ -11,3 +11,16 @@
 9,5.277,95.00,Bari 95% CDI por Bari,FGC,LCI,11.58% a.a.,15/04/2023,Bari,Bari
 10,5.276,14.45,Voiter Prefixado 14.45% por BTG Pactual,FGC,CDB,11.48% a.a.,17/04/2023,BTG Pactual,Voiter
 11,5.276,14.45,Voiter Prefixado 14.45% por Ágora Investimentos,FGC,CDB,11.48% a.a.,17/04/2023,Ágora Investimentos,Voiter
+,retorno,rentabilidade,empresa,tag,tipo,retabilidade_ano,prazo,distribuidor,emissor
+0,5.264,114.11,Tesouro SELIC 2027,,Tesouro Direto,11.05% a.a.,25/04/2023,Rico Investimentos,Tesouro Nacional
+1,5.264,13.30,BMG IPCA + 7.3% por Nu invest,FGC,CDB,10.58% a.a.,03/05/2023,Nu invest,BMG
+2,5.264,14.00,Banco Master Prefixado 14% por Nu invest,FGC,CDB,11.12% a.a.,24/04/2023,Nu invest,Banco Master
+3,5.264,14.00,RNX Prefixado 14% por modalmais,FGC,CDB,11.12% a.a.,24/04/2023,modalmais,RNX
+4,5.263,113.32,Tesouro SELIC 2024,,Tesouro Direto,10.98% a.a.,25/04/2023,Rico Investimentos,Tesouro Nacional
+5,5.262,13.91,Modal Prefixado 13.91% por modalmais,FGC,CDB,11.05% a.a.,24/04/2023,modalmais,Modal
+6,5.261,110.00,Banco Master 110% CDI por Órama,FGC,CDB,10.66% a.a.,01/05/2023,Órama,Banco Master
+7,5.261,88.00,BTG Pactual 88% CDI por Nova Futura Investimentos,FGC,LCA,10.73% a.a.,27/04/2023,Nova Futura Investimentos,BTG Pactual
+8,5.255,110.00,Bari 110% CDI por Bari,FGC,CDB,10.66% a.a.,25/04/2023,Bari,Bari
+9,5.255,88.00,Alfa 88% CDI por Guide Investimentos,FGC,LCA,10.73% a.a.,24/04/2023,Guide Investimentos,Alfa
+10,5.255,107.00,BRK Financeira 107% CDI por Órama,FGC,CDB,10.37% a.a.,01/05/2023,Órama,BRK Financeira
+11,5.253,110.00,Modal 110% CDI por modalmais,FGC,CDB,10.66% a.a.,24/04/2023,modalmais,Modal

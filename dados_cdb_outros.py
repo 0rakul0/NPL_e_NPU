@@ -6,6 +6,7 @@ import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+from joblib import Parallel, delayed
 import openpyxl
 import time
 
@@ -33,7 +34,7 @@ class bate_lista_cdb_outros():
     def salva_dados(self, dict_dados, pagina):
         print(pagina)
         df = pd.DataFrame(dict_dados)
-        df.to_csv(f"./dados/6 meses/{pagina}__todos_6.csv", encoding='utf-8')
+        df.to_csv(f"./dados/6 meses/{pagina}__todos_6.csv", encoding='utf-8', mode='a')
 
 
     #extrai dados
@@ -131,6 +132,4 @@ class bate_lista_cdb_outros():
 
 if __name__ == "__main__":
     start = bate_lista_cdb_outros()
-
-    for page in range(1, 21):
-        start.inicio(page,6)
+    p = Parallel(n_jobs=-1)(delayed(start.inicio)(page,6) for page in range(1, 21))

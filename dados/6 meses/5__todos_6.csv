@@ -11,3 +11,16 @@
 9,5.266,14.00,Banco Master Prefixado 14% por Nu invest,FGC,CDB,11.12% a.a.,16/04/2023,Nu invest,Banco Master
 10,5.266,13.87,Pine Prefixado 13.87% por BTG Pactual,FGC,CDB,11.02% a.a.,17/04/2023,BTG Pactual,Pine
 11,5.265,13.85,BTG Pactual Prefixado 13.85% por Ágora Investimentos,FGC,CDB,11.00% a.a.,17/04/2023,Ágora Investimentos,BTG Pactual
+,retorno,rentabilidade,empresa,tag,tipo,retabilidade_ano,prazo,distribuidor,emissor
+0,5.243,104.50,BTG Pactual 104.5% CDI por BTG Pactual,FGC,CDB,10.13% a.a.,25/04/2023,BTG Pactual,BTG Pactual
+1,5.242,105.00,Paraná Banco 105% CDI por Paraná Banco,FGC,CDB,10.18% a.a.,24/04/2023,Paraná Banco,Paraná Banco
+2,5.242,105.00,Daycoval 105% CDI por Daycoval,FGC,CDB,10.18% a.a.,24/04/2023,Daycoval,Daycoval
+3,5.242,105.00,PagBank 105% CDI por XP Investimentos,FGC,CDB,10.18% a.a.,24/04/2023,XP Investimentos,PagBank
+4,5.242,105.00,Máxima 105% CDI por modalmais,FGC,CDB,10.18% a.a.,24/04/2023,modalmais,Máxima
+5,5.242,105.00,Santana Financeira 105% CDI por Daycoval,FGC,LC,10.18% a.a.,24/04/2023,Daycoval,Santana Financeira
+6,5.242,104.00,Omni Banco 104% CDI por Nu invest,FGC,CDB,10.08% a.a.,25/04/2023,Nu invest,Omni Banco
+7,5.242,104.00,Fator 104% CDI por Ágora Investimentos,FGC,CDB,10.08% a.a.,25/04/2023,Ágora Investimentos,Fator
+8,5.240,100.92,Caruana Financeira CDI + 0.1% por Órama,FGC,CDB,9.78% a.a.,01/05/2023,Órama,Caruana Financeira
+9,5.240,104.00,RNX 104% CDI por modalmais,FGC,CDB,10.08% a.a.,24/04/2023,modalmais,RNX
+10,5.239,100.50,Pine 100.5% CDI por Órama,FGC,CDB,9.74% a.a.,01/05/2023,Órama,Pine
+11,5.239,103.00,Daycoval 103% CDI por Daycoval,FGC,CDB,9.98% a.a.,25/04/2023,Daycoval,Daycoval

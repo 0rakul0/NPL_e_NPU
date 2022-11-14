@@ -11,3 +11,16 @@
 9,5.268,13.86,Paraná Banco Prefixado 13.86% por Guide Investimentos,FGC,CDB,11.01% a.a.,18/04/2023,Guide Investimentos,Paraná Banco
 10,5.267,91.00,BTG Pactual 91% CDI por BTG Pactual,FGC,LCI,11.09% a.a.,17/04/2023,BTG Pactual,BTG Pactual
 11,5.267,91.00,ABC 91% CDI por ABC Personal,FGC,LCA,11.09% a.a.,17/04/2023,ABC Personal,ABC
+,retorno,rentabilidade,empresa,tag,tipo,retabilidade_ano,prazo,distribuidor,emissor
+0,5.245,103.00,Luso Brasileiro 103% CDI por Órama,FGC,CDB,9.98% a.a.,01/05/2023,Órama,Luso Brasileiro
+1,5.245,103.00,Mercado Livre 103% CDI por Órama,FGC,CDB,9.98% a.a.,01/05/2023,Órama,Mercado Livre
+2,5.244,102.50,Caixa Geral 102.5% CDI por Órama,FGC,CDB,9.94% a.a.,01/05/2023,Órama,Caixa Geral
+3,5.244,105.00,Bari 105% CDI por Bari,FGC,CDB,10.18% a.a.,25/04/2023,Bari,Bari
+4,5.244,105.00,Paraná Banco 105% CDI por Paraná Banco,FGC,CDB,10.18% a.a.,25/04/2023,Paraná Banco,Paraná Banco
+5,5.244,105.00,PagBank 105% CDI por Nu invest,FGC,CDB,10.18% a.a.,25/04/2023,Nu invest,PagBank
+6,5.244,105.00,PagBank 105% CDI por Ágora Investimentos,FGC,CDB,10.18% a.a.,25/04/2023,Ágora Investimentos,PagBank
+7,5.244,105.00,Daycoval 105% CDI por Daycoval,FGC,CDB,10.18% a.a.,25/04/2023,Daycoval,Daycoval
+8,5.243,105.61,BMG CDI + 0.61% por Nova Futura Investimentos,FGC,CDB,10.23% a.a.,24/04/2023,Nova Futura Investimentos,BMG
+9,5.243,102.00,BMG 102% CDI por Órama,FGC,CDB,9.89% a.a.,01/05/2023,Órama,BMG
+10,5.243,105.50,Mercado Livre 105.5% CDI por XP Investimentos,FGC,CDB,10.22% a.a.,24/04/2023,XP Investimentos,Mercado Livre
+11,5.243,105.50,ABC 105.5% CDI por ABC Personal,FGC,CDB,10.22% a.a.,24/04/2023,ABC Personal,ABC
