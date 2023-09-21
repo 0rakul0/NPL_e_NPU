@@ -132,4 +132,4 @@ class bate_lista_cdb_outros():
 
 if __name__ == "__main__":
     start = bate_lista_cdb_outros()
-    p = Parallel(n_jobs=-1)(delayed(start.inicio)(page,6) for page in range(1, 21))
+    p = Parallel(n_jobs=5)(delayed(start.inicio)(page,6) for page in range(1, 21))
